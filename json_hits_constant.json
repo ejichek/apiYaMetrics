@@ -1,7 +1,7 @@
 {"YaApiHitsConstant":{
-	"counter_id" :"12084547",
-	"API_token":"y0_AgAAAAB29aj2AAwCXgAAAAEJFTfLAACPMhg8YaZLl6Rcw-kzM1TBWecfyg",
-	"proxy":"http://192.168.41.118:1080",
+	"counter_id" :"press_your_counter_id 12345678",
+	"API_token":"press_your_API_token",
+	"proxy":"press_your_proxy",
 	"path_request_id":"/home/bdataadmin/airflow/logs/request_id.txt",
 	"path_parts_and_partsizes_txt":"/home/bdataadmin/airflow/logs/parts_and_partsizes.txt", 
 	"path_many_txt":"/home/bdataadmin/airflow/txt_many/",
