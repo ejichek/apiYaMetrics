@@ -1,0 +1,14 @@
+{"YaApiHitsConstant":{
+	"counter_id" :"12084547",
+	"API_token":"y0_AgAAAAB29aj2AAwCXgAAAAEJFTfLAACPMhg8YaZLl6Rcw-kzM1TBWecfyg",
+	"proxy":"http://192.168.41.118:1080",
+	"path_request_id":"/home/bdataadmin/airflow/logs/request_id.txt",
+	"path_parts_and_partsizes_txt":"/home/bdataadmin/airflow/logs/parts_and_partsizes.txt", 
+	"path_many_txt":"/home/bdataadmin/airflow/txt_many/",
+	"path_txt_big":"/home/bdataadmin/airflow/txt_big/final_txt.txt",
+	"col_tab_Basic":"ym:pv:watchID,ym:pv:date,ym:pv:dateTime,ym:pv:pageViewID,ym:pv:counterID,ym:pv:clientID,ym:pv:counterUserIDHash,ym:pv:title,ym:pv:goalsID,ym:pv:URL",
+	"col_tab_TrafficSource":"ym:pv:watchID,ym:pv:date,ym:pv:referer,ym:pv:UTMCampaign,ym:pv:UTMContent,ym:pv:UTMMedium,ym:pv:UTMSource,ym:pv:UTMTerm,ym:pv:from,ym:pv:hasGCLID,ym:pv:GCLID,ym:pv:lastTrafficSource,ym:pv:lastSearchEngineRoot,ym:pv:lastSearchEngine,ym:pv:lastAdvEngine,ym:pv:lastSocialNetwork,ym:pv:lastSocialNetworkProfile,ym:pv:recommendationSystem,ym:pv:messenger,ym:pv:browser",
+	"col_tab_Ecommerce_EventParams_EventType":"ym:pv:watchID,ym:pv:date,ym:pv:link,ym:pv:download,ym:pv:notBounce,ym:pv:artificial,ym:pv:ecommerce,ym:pv:params,ym:pv:parsedParamsKey1,ym:pv:parsedParamsKey2,ym:pv:parsedParamsKey3,ym:pv:parsedParamsKey4,ym:pv:parsedParamsKey5,ym:pv:parsedParamsKey6,ym:pv:parsedParamsKey7,ym:pv:parsedParamsKey8,ym:pv:parsedParamsKey9,ym:pv:parsedParamsKey10,ym:pv:httpError,ym:pv:shareService,ym:pv:shareURL,ym:pv:shareTitle",
+	"col_tab_Device":"ym:pv:watchID,ym:pv:date,ym:pv:operatingSystem,ym:pv:browserMajorVersion,ym:pv:browserMinorVersion,ym:pv:browserCountry,ym:pv:browserEngine,ym:pv:browserEngineVersion1,ym:pv:browserEngineVersion2,ym:pv:browserEngineVersion3,ym:pv:browserEngineVersion4,ym:pv:browserLanguage,ym:pv:clientTimeZone,ym:pv:cookieEnabled,ym:pv:deviceCategory,ym:pv:javascriptEnabled,ym:pv:mobilePhone,ym:pv:mobilePhoneModel,ym:pv:operatingSystemRoot,ym:pv:physicalScreenHeight,ym:pv:physicalScreenWidth,ym:pv:screenColors,ym:pv:screenFormat,ym:pv:screenHeight,ym:pv:screenOrientation,ym:pv:screenWidth,ym:pv:windowClientHeight,ym:pv:windowClientWidth,ym:pv:ipAddress,ym:pv:regionCity,ym:pv:regionCountry,ym:pv:regionCityID,ym:pv:regionCountryID,ym:pv:isPageView,ym:pv:isTurboPage,ym:pv:isTurboApp,ym:pv:iFrame"
+	}
+}
