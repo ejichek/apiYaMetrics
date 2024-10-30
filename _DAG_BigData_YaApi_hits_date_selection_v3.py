@@ -693,7 +693,7 @@ with DAG(dag_id='BigData_YaApi_hits_date_selection_v3',
         dag=dag,
         trigger_rule='all_success',
         op_kwargs={
-            'message': f"Отработал успешно ✅ - DAG hits_schedule_{start_date_v}_{end_date_v}"}
+            'message': f"Отработал успешно ✅ - DAG hits_date_selection_{start_date_v}_{end_date_v}"}
     )
 
     tlgrm_oneFailed = PythonOperator(
@@ -702,7 +702,7 @@ with DAG(dag_id='BigData_YaApi_hits_date_selection_v3',
         dag=dag,
         trigger_rule='one_failed',
         op_kwargs={
-            'message': f"Упал 🛑 - DAG hits_schedule_{read_request_id()}_{start_date_v}_{end_date_v}"}
+            'message': f"Упал 🛑 - DAG hits_date_selection_{read_request_id()}_{start_date_v}_{end_date_v}"}
     )
 
 (task_clear_tmp_1 >> task_clear_hdfs_1 >> task_rm_4dir_hdfs_1 >> ocenka_vozmozhnisti_sozd_zaprosa_1 >> sozd_zaprosa_logov_1 >> get_status_1 >> task_save_request_id_1 >> task_extract_partsize_1 >> task_download_txt_1 >> task_merge_txt_1 >> clear_YaApi_query_1 >> task_move_bigTxt_1 >> task_start_pySpark_Basic_orc >> task_clear_tmp_2 >> task_clear_hdfs_2 >> ocenka_vozmozhnisti_sozd_zaprosa_2 >> sozd_zaprosa_logov_2 >> get_status_2 >> task_save_request_id_2 >> task_extract_partsize_2 >> task_download_txt_2 >> task_merge_txt_2 >> clear_YaApi_query_2 >> task_move_bigTxt_2 >> task_start_pySpark_TrafficSource_orc >> task_clear_tmp_3 >> task_clear_hdfs_3 >> ocenka_vozmozhnisti_sozd_zaprosa_3 >> sozd_zaprosa_logov_3 >> get_status_3 >> task_save_request_id_3 >> task_extract_partsize_3 >> task_download_txt_3 >> task_merge_txt_3 >> clear_YaApi_query_3 >> task_move_bigTxt_3 >> task_start_pySpark_3E_orc >> task_clear_tmp_4 >> task_clear_hdfs_4 >> ocenka_vozmozhnisti_sozd_zaprosa_4 >> sozd_zaprosa_logov_4 >> get_status_4 >> task_save_request_id_4 >> task_extract_partsize_4 >> task_download_txt_4 >> task_merge_txt_4 >> clear_YaApi_query_4 >> task_move_bigTxt_4 >> task_start_pySpark_Device_orc >> task_clear_tmp_5 >> task_clear_hdfs_5 >> task_start_pySpark_join >> task_rm_4dir_hdfs_2 >> [tlgrm_allSuccess, tlgrm_oneFailed])
