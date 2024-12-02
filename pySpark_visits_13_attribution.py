@@ -44,7 +44,7 @@ vsiits_13_attribution_schema = StructType([
 ])
 
 df1 = spark.read \
-    .option("delimiter", "|") \
+    .option("delimiter", "\t") \
     .schema(vsiits_13_attribution_schema) \
     .csv("/user/azhalybin/airflow/test/txt/final_txt.txt")
 
