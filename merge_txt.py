@@ -13,12 +13,12 @@ def merge_txt(path_txt_many, path_txt_big):
         data_zagolovok = f.read().splitlines(True)
         
         with open(path_txt_big, 'w', encoding='utf-8') as f1:
-            f1 = f1.write(data_zagolovok[0].replace("ym:pv:", "").replace("ym:s:", "").replace("\t", "|"))
+            f1 = f1.write(data_zagolovok[0].replace("ym:pv:", "").replace("ym:s:", ""))
 
     for i in all_txt_files:
         
         with open(i, 'r', encoding='utf-8') as f2:
-            data = f2.read().replace("\t", "|").splitlines(True)
+            data = f2.read().splitlines(True)
         
             with open(path_txt_big, 'a', encoding='utf-8') as f_final:
                 f_final.writelines(data[1:])  
