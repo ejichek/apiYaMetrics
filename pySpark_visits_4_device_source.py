@@ -39,7 +39,7 @@ visits_device_source_schema = StructType([
 ])
 
 df1 = spark.read \
-    .option("delimiter", "|") \
+    .option("delimiter", "\t") \
     .schema(visits_device_source_schema) \
     .csv("/user/azhalybin/airflow/test/txt/final_txt.txt")
 
